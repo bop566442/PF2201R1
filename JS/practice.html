@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- 1. Câu lệnh alert -->
+        <script>
+            alert("Hoàng Tiến Long")
+        </script>
+        <!-- 2. Cú pháp nhận dữ liệu từ hộp thoại -->
+        <script>
+            let a = prompt("nhập số a")
+            alert(a*a)
+        </script>   
+        <!-- 3. Cú pháp nhận dữ liệu từ input -->
+        <input type="text" id="st1">
+        <input type="text" id="st2">
+        <h1 id="kq1"></h1>
+        <button onclick="tinh()">Tinh</button>
+        <script>
+            function tinh() {
+                let a = document.getElementById("st1").value
+                let b = document.getElementById('st2').value
+                let s = a*b
+                document.getElementById("kq1").innerHTML = s
+            }
+        </script>
+        4. 
+        <!-- a. -->
+        <input type="text" id="input-a">
+        <button onclick="chuvi()">Chu vi</button>
+        <button onclick="dientich()">Dien tich</button>
+        <h4 id="kq2"></h4>
+        <script>
+            function chuvi() {
+                let a = document.getElementById("input-a").value;
+                document.getElementById("kq2").innerHTML = a*4;
+            }
+            function dientich() {
+                let a = document.getElementById("input-a").value;
+                document.getElementById("kq2").innerHTML = a*a;
+            }
+       </script>
+       <!-- b. -->
+       <input type="text" name="" id="nhap-a">
+       <input type="text" name="" id="nhap-b">
+       <button onclick="tinh1()">A mũ A</button>
+       <button onclick="tinh2()">A mũ B</button>
+       <p id="kq3"></p>
+       <script>
+           function tinh1() {
+               let a = document.getElementById("nhap-a").value;
+               let b = document.getElementById("nhap-b").value;
+               document.getElementById("kq3").innerHTML = a*a;
+           }
+           
+       </script>
+
+
+
+        
+
+        
+</body>
+</html>

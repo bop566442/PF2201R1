@@ -1,0 +1,16 @@
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 10px solid rgb(234, 238, 238);
+}
+body {
+    font-family: 'Redressed', cursive;
+    color: wheat;
+    background-image: url(./IMAGE/2561184c0d83292e2814a8db5dfe49e1.jpg);
+    background-size: cover;
+}
+.content {
+    margin-left: 20%;
+}
+
