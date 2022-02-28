@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tam giac</title>
+</head>
+
+<body>
+    <p>Cạnh A</p><input type="text" id="canh-a">
+    <p>Cạnh B</p><input type="text" id="canh-b">
+    <p>Cạnh C</p><input type="text" id="canh-c">
+    <button onclick="check()">check</button>
+    <h3 id="kq"></h3>
+    <script>
+        function check() { 
+            let a = +document.getElementById("canh-a").value;
+            let b = +document.getElementById("canh-b").value;
+            let c = +document.getElementById("canh-c").value;
+            
+            if ((a < b + c) && (b < a + c) && (c < a + b)) {
+                if ((a == b && b == c)) {
+                    document.getElementById("kq").innerHTML = "đây là tam giác đều";
+                } else if ((a == b) || (a == c) || (b == c)) {
+                    document.getElementById("kq").innerHTML = "đây là tam giác cân";
+                } else if ((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b)) {
+                    document.getElementById("kq").innerHTML = "đây là tam giác vuông";
+                } else if ((a != b) && (b != c) && (c != a))
+                    document.getElementById("kq").innerHTML = "đây là tam giác thường";
+            } else {
+                document.getElementById("kq").innerHTML = "a,b,c không phải 3 cạnh của 1 tam giác";
+            }
+        } 
+    </script>
+</body>
+
+</html>
