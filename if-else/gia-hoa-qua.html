@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Giá hoa quả</h1>
+    <input type="text" name="" id="gia">
+    <button onclick="check()">Xem giá</button>
+    <h3 id="rs"></h3>
+
+
+    <script>
+        function check() {
+            let a = document.getElementById('gia').value;
+            if (a == 20000) {
+                document.getElementById('rs').innerHTML = "ổi, dưa hấu";
+            } else if (a == 30000) {
+                document.getElementById('rs').innerHTML = "Táo, xoài";
+            } else if (a == 40000) {
+                document.getElementById('rs').innerHTML = "cam, chôm chôm";
+            } else if (a == 50000) {
+                document.getElementById('rs').innerHTML = "măng cụt";
+            } else {
+                document.getElementById('rs').innerHTML = "không xác định";
+            }
+        }
+    </script>
+</body>
+
+</html>

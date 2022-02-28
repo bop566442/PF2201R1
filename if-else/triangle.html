@@ -9,17 +9,18 @@
 </head>
 
 <body>
-    <p>Cạnh A</p><input type="text" id="canh-a">
-    <p>Cạnh B</p><input type="text" id="canh-b">
-    <p>Cạnh C</p><input type="text" id="canh-c">
+    <h1>Kiểm tra 3 cạnh tam giác</h1>
+    <p>Cạnh A:</p><input type="text" id="canh-a">
+    <p>Cạnh B:</p><input type="text" id="canh-b">
+    <p>Cạnh C:</p><input type="text" id="canh-c">
     <button onclick="check()">check</button>
     <h3 id="kq"></h3>
     <script>
-        function check() { 
+        function check() {
             let a = +document.getElementById("canh-a").value;
             let b = +document.getElementById("canh-b").value;
             let c = +document.getElementById("canh-c").value;
-            
+
             if ((a < b + c) && (b < a + c) && (c < a + b)) {
                 if ((a == b && b == c)) {
                     document.getElementById("kq").innerHTML = "đây là tam giác đều";
