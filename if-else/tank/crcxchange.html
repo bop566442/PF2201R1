@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>Amount</h4>
+    <input type="text" id="dauvao">
+    <h4>From Currency</h4>
+    <select name="" id="select1">
+        <option value="x">VND</option>
+        <option value="y">USD</option>
+
+    </select>
+    <h4>To Currency</h4>
+    <select name="" id="select2">
+        <option value="x">VND</option>
+        <option value="y">USD</option>
+
+    </select>
+    <h5 id="rs"></h5>
+    <br>
+    <hr>
+    <button onclick="convert()">Convert</button>
+
+    <script>
+        function convert() {
+            let a = document.getElementById('dauvao').value;
+            let b = document.getElementById('select1').value;
+            let c = document.getElementById('select2').value;
+            
+            
+            if (b == c) {
+                document.getElementById('rs').innerHTML = a
+            }
+            if (b == "x" && c == "y") {
+                document.getElementById('rs').innerHTML = a / 24000
+            }
+            if (b == "y" && c == "x") {
+                document.getElementById('rs').innerHTML = a * 24000
+            }
+
+
+
+        }
+    </script>
+</body>
+
+</html>
