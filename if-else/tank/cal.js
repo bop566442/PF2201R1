@@ -1,12 +1,33 @@
 function moveUp() {
-    document.getElementById("tank").style["top"] = `${15}px`
+    let a = document.getElementById('tank').style.top;
+    let a1 = parseInt(a);
+    let b = document.getElementById('tank').style.left;
+    let b1 = parseInt(b);
+    a1 -= 19;
+    document.getElementById('tank').style.top = a1 + "px"
+
 }
 function moveDown() {
-    document.getElementById("tank").style["top"] = `${30}px`
+    let a = document.getElementById('tank').style.top;
+    let a1 = parseInt(a);
+    let b = document.getElementById('tank').style.left;
+    let b1 = parseInt(b);
+    a1 += 19;
+    document.getElementById('tank').style.top = a1 + "px"
 }
 function moveRight() {
-    document.getElementById("tank").style["left"] = `${38}px`
+    let a = document.getElementById('tank').style.top;
+    let a1 = parseInt(a);
+    let b = document.getElementById('tank').style.left;
+    let b1 = parseInt(b);
+    b1 += 19;
+    document.getElementById('tank').style.left = b1 + "px"
 }
 function moveLeft() {
-    document.getElementById("tank").style["left"] = `${20}px`
+    let a = document.getElementById('tank').style.top;
+    let a1 = parseInt(a);
+    let b = document.getElementById('tank').style.left;
+    let b1 = parseInt(b);
+    b1 -= 19;
+    document.getElementById('tank').style.left = b1 + "px"
 }
