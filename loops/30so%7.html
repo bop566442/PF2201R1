@@ -10,15 +10,21 @@
 
 <body>
     <script>
-        for (let i=1; i<=5; i++) {
-            for (let j=1; j<=5-i; j++) {
-                document.write("&nbsp;&nbsp;"); 
+        let n = 1;
+        let tong = 0;
+        let dem = 1;
+        while (n > 0) {
+            if (n % 7 == 0) {
+                tong += n;
+                dem++;
             }
-            for (let j=1; j<=i; j++) {
-                document.write("*"); 
+            if (dem > 30) {
+                break;
             }
-            document.write("<br>");
+            n++;
         }
+        document.write(tong);
+
     </script>
 </body>
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = 1;
+        while (n <= 100) {
+            if (n % 3 == 0) {
+                if (n % 5 == 0) {
+                    document.write("FizzBuzz");
+                }
+                else {
+                    document.write("Fizz");
+                }
+            }
+            else if (n % 5 == 0) {
+                document.write("Buzz");
+            }
+            else
+                document.write(n);
+            document.write("<br>");
+            n++;
+        }
+    </script>
+
+</body>
+
+</html>

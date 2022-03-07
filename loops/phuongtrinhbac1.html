@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="soa">
+    <input type="text" id="sob">
+    <button onclick="check()">Kết Quả</button>
+    <h4 id="rs"></h4>
+
+    <script>
+        function check() {
+            let a = document.getElementById('soa').value;
+            let b = document.getElementById('sob').value;
+
+
+            if (a == 0 && b == 0) {
+                document.getElementById("rs").innerHTML = "phuong trinh co vo so nghiem";
+            } else if (a == 0 && b != 0) {
+                document.getElementById("rs").innerHTML = "phuong trinh vo nghiem";
+            } else if (a != 0) {
+                document.getElementById("rs").innerHTML = "phuong trinh co nghiem duy nhat x = "+(-b / a);
+            }
+
+        }
+    </script>
+</body>
+
+</html>
